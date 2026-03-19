@@ -41,6 +41,13 @@ app.get("/nieuws", async function (request, response) {
   response.render("news.liquid", {path: request.path});
 });
 
+app.post("/add-nieuws", async function (request, response) {
+  await fetch("https://fdnd-agency.directus.app/items/adconnect_news", {
+    method: "POST",
+    body: JSON.stringify({}),
+  });
+});
+
 app.get("/lado", async function (request, response) {
   // Render index.liquid uit de Views map
 
