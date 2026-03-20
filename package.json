@@ -1,7 +1,7 @@
 {
-  "name": "server-side-rendering",
+  "name": "the-web-is-for-everyone-interactive-functionality",
   "version": "1.0.0",
-  "description": "Ontwerp en ontwikkel een server-side website voor een opdrachtgever.",
+  "description": "Ontwerp en maak voor een opdrachtgever een interactieve toepassing die voor iedereen toegankelijk is.",
   "main": "server.js",
   "type": "module",
   "directories": {
@@ -14,19 +14,22 @@
   "keywords": [
     "node",
     "express",
-    "liquid"
+    "liquid",
+    "progressive enhancement"
   ],
   "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fdnd-task/server-side-rendering/issues"
+    "url": "https://github.com/fdnd-task/the-web-is-for-everyone-interactive-functionality/issues"
   },
-  "homepage": "https://github.com/fdnd-task/server-side-rendering#readme",
+  "homepage": "https://github.com/fdnd-task/the-web-is-for-everyone-interactive-functionality#readme",
   "dependencies": {
     "express": "^5.0.1",
     "liquidjs": "^10.21.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "express": "latst",
+    "liquidjs": "latest"
   }
 }
