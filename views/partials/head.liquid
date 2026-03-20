@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/styleguide.css">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+     <header>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="/">FAQ's</a></li>
+          <li><a href="/over-ons">Over ons</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header>
+      <nav class="main-nav">
+        <img src="/assets/logo-light.svg" alt="logo">
+        <ul>
+          <li><a class="{% if path == '/' %}active{% endif %}" href="/">Home</a></li>
+          <li><a class="{% if path == '/over-ad' %}active{% endif %}" href="/over-ad">Over Ad's</a></li>
+          <li><a class="{% if path == '/lado' %}active{% endif %}" href="/lado">Lado's en Ad-profielen</a></li>
+          <li><a class="{% if path == '/publicaties' %}active{% endif %}" href="/publicaties">Publicaties</a></li>
+          <li><a class="{% if path == '/talent-awards' %}active{% endif %}" href="/talent-awards">talent award</a></li>
+          <li><a class="{% if path == '/nieuws' %}active{% endif %}" href="/nieuws">Nieuws</a></li>
+          <li><a class="link-button" href="#">kom naar Ad-dag</a></li>
+        </ul>
+      </nav>
+    </header>
