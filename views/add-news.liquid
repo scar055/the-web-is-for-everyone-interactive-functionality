@@ -1,2 +1,29 @@
 {% render 'partials/head.liquid', title: 'Ad award', path: path %}
-{% render 'partials/foot.liquid' %}
+
+<main>
+  <form>
+    <label>
+      title
+      <input name="title" type="text">
+    </label>
+    <label>
+      beschrijving
+      <textarea></textarea>
+    </label>
+    <label>
+      auteur
+      <input name="author" type="text">
+    </label>
+    <label>
+      datum
+      <input name="date" type="date">
+    </label>
+    <label>
+      publicatie
+      <input name="date" type="date">
+    </label>
+    <button>verzenden</button>
+  </form>
+</main>
+
+{% render 'partials/footer.liquid' %}

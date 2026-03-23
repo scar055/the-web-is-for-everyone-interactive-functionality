@@ -1,0 +1,59 @@
+/* header */
+
+header {
+    .top-nav {
+        background-color: var(--secondary-background-color);
+
+        a {
+            font-family: clashdisplay;
+        }
+    }
+
+    .main-nav {
+        background-color: var(--triary-background-color);
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        position: sticky;
+        padding: 1rem 5%;
+
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            gap: 2rem;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: var(--text-color);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/* main */
+
+main {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 4em;
+        gap: .75em;
+
+        &:nth-of-type(even) {
+            background-color: var(--secondary-background-color);
+        }
+
+        p {
+            width: 80ch;
+        }
+    }
+}

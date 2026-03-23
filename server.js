@@ -48,9 +48,11 @@ app.get("/nieuws-toevoegen", async function (request, response) {
 app.post("/add-nieuws", async function (request, response) {
   await fetch("https://fdnd-agency.directus.app/items/adconnect_news", {
     method: "POST",
-    body: JSON.stringify({}),
+    body: JSON.stringify({
+      name: request.body.name,
+    }),
   });
-  response.render("add-news.liquid", {path: request.path});
+  response.redirect(303, "/");
 });
 
 app.get("/lado", async function (request, response) {
