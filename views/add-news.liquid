@@ -1,26 +1,33 @@
 {% render 'partials/head.liquid', title: 'Ad award', path: path %}
 
 <main>
-  <form>
+  <form method="POST" action="/nieuws-toevoegen">
     <label>
       title
-      <input name="title" type="text">
+      <input name="title" id="title" type="text">
     </label>
     <label>
       beschrijving
-      <textarea></textarea>
+      <textarea id="description" name="description"></textarea>
     </label>
     <label>
       auteur
-      <input name="author" type="text">
+      <input id="author" name="author" type="text">
     </label>
     <label>
       datum
-      <input name="date" type="date">
+      <input id="date" name="date" type="date">
     </label>
     <label>
       publicatie
-      <input name="date" type="date">
+      <select id="status" name="status">
+        <option>publish</option>
+        <option>not published</option>
+      </select>
+    </label>
+    <label>
+      artikel
+      <textarea id="body" name="body"></textarea>
     </label>
     <button>verzenden</button>
   </form>
