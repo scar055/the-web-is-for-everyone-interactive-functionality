@@ -3,30 +3,30 @@
 <main>
   <form method="POST" action="/nieuws-toevoegen">
     <label>
-      title
+      Title
       <input name="title" id="title" type="text">
     </label>
     <label>
-      beschrijving
+      Beschrijving
       <textarea id="description" name="description"></textarea>
     </label>
     <label>
-      auteur
+      Auteur
       <input id="author" name="author" type="text">
     </label>
     <label>
-      datum
-      <input id="date" name="date" type="date">
+      Datum
+      <input id="date" name="date" type="date" required>
     </label>
     <label>
-      publicatie
+      Publicatie
       <select id="status" name="status">
-        <option>publish</option>
-        <option>not published</option>
+        <option value="published">gepubliceerd</option>
+        <option value="draft">voorlopig versie</option>
       </select>
     </label>
     <label>
-      artikel
+      Artikel
       <textarea id="body" name="body"></textarea>
     </label>
     <button>verzenden</button>
