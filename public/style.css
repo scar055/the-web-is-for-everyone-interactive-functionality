@@ -56,4 +56,10 @@ main {
             width: 80ch;
         }
     }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
 }
