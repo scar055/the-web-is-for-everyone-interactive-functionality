@@ -46,6 +46,7 @@ main {
         flex-direction: column;
         align-items: center;
         padding-block: 4em;
+        padding-inline: 1em;
         gap: .75em;
 
         &:nth-of-type(even) {
@@ -60,6 +61,34 @@ main {
     form {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
+        margin-block-start: 1em;
+        background-color: var(--background-color);
+        padding: 1.5em;
+        border-radius: 1em;
+        width: 100%;
+
+        label {
+            display: grid;
+
+            input[type="text"],
+            input[type="date"],
+            textarea,
+            select {
+                border-style: solid;
+                padding: .9em;
+                border-radius: .5em;
+                margin: .5em 0 0;
+                border: 1px solid #a8afb8;
+            }
+        }
+
+        button {
+            background-color: var(--button-background);
+            color: var(--background-color);
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 1.1rem 1.8rem;
+        }
     }
 }
