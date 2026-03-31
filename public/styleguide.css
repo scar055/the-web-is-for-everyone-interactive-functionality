@@ -63,7 +63,8 @@ html {
     p,
     a,
     span,
-    button {
+    button,
+    label {
         font-family: archivo;
     }
 }
@@ -74,4 +75,8 @@ html {
     text-decoration: none;
     border-radius: 15px;
     padding: 1.1rem 1.8rem;
+}
+
+.secondary-background {
+    background-color: var(--secondary-background-color);
 }
