@@ -1,36 +1,39 @@
 {% render 'partials/head.liquid', title: 'Ad award', path: path %}
 
-<main>
-  <form method="POST" action="/nieuws-toevoegen">
-    <label>
-      Title
-      <input name="title" id="title" type="text">
-    </label>
-    <label>
-      Beschrijving
-      <textarea id="description" name="description"></textarea>
-    </label>
-    <label>
-      Auteur
-      <input id="author" name="author" type="text">
-    </label>
-    <label>
-      Datum
-      <input id="date" name="date" type="date" required>
-    </label>
-    <label>
-      Publicatie
-      <select id="status" name="status">
-        <option value="published">gepubliceerd</option>
-        <option value="draft">voorlopig versie</option>
-      </select>
-    </label>
-    <label>
-      Artikel
-      <textarea id="body" name="body"></textarea>
-    </label>
-    <button>verzenden</button>
-  </form>
+<main class="secondary-background">
+  <section>
+    <h1>voeg nieuws toe</h1>
+    <form method="POST" action="/nieuws-toevoegen">
+      <label>
+        Title
+        <input name="title" id="title" type="text">
+      </label>
+      <label>
+        Beschrijving
+        <textarea id="description" name="description"></textarea>
+      </label>
+      <label>
+        Auteur
+        <input id="author" name="author" type="text">
+      </label>
+      <label>
+        Datum
+        <input id="date" name="date" type="date" required>
+      </label>
+      <label>
+        Publicatie
+        <select id="status" name="status">
+          <option value="published">gepubliceerd</option>
+          <option value="draft">voorlopig versie</option>
+        </select>
+      </label>
+      <label>
+        Artikel
+        <textarea id="body" name="body"></textarea>
+      </label>
+      <button>verzenden</button>
+    </form>
+  </section>
 </main>
 
 {% render 'partials/footer.liquid' %}
