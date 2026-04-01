@@ -68,6 +68,21 @@ main {
         border-radius: 1em;
         width: 100%;
 
+        @media (min-width: 37em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            max-width: 50em;
+
+            grid-template-areas:
+                "title author"
+                "description date"
+                "description status"
+                "article article"
+                ". button"
+            ;
+        }
+
         label {
             display: grid;
 
